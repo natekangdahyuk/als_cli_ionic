@@ -1,0 +1,1117 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>바로트럭</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      
+    </ion-row>
+    
+    <div class="main"><!--전체 div-->
+      <!--자음 그룹판-->
+      <div class="divBox" id="div_group_jaum_top" style="z-index:1;">
+        <!--자음그룹 1 줄-->    
+        <ion-row>
+          <ion-col col-4>          
+                  <div class="padder-center">                    
+                  </div>                
+          </ion-col>
+          <ion-col col-4>                
+                    <div class="padder-center" >
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                    </div>                
+          </ion-col>
+          <ion-col col-4>                
+                  <div class="padder-center">                      
+                  </div>                
+          </ion-col>
+        </ion-row>
+        <!--//자음그룹 1 줄-->    
+        <!--자음그룹 2 줄-->    
+        <ion-row>
+            <ion-col col-4>
+                <div class="padder-center" >
+                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_first')"><span>ㄱㄴ<br>ㄷㄹ</span></button>
+                </div>                
+            </ion-col>
+            <ion-col col-4>                
+                      <div class="padder-center" >                      
+                      </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_second')"><span>ㅁㅂ<br>ㅅㅇ</span></button>
+                </div>                
+            </ion-col>
+        </ion-row>
+        <!--//자음그룹 2 줄-->    
+        <!--자음그룹 3 줄-->    
+        <ion-row>
+            <ion-col col-4>
+                <div class="padder-center" >
+                    
+                </div>                
+            </ion-col>
+            <ion-col col-4>                
+                      <div class="padder-center" style="height: 20vw;">                      
+                      </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                    
+                </div>                
+            </ion-col>
+        </ion-row>
+        <!--//자음그룹 3 줄-->    
+        <!--자음그룹 4 줄-->    
+        <ion-row>
+            <ion-col col-4>
+                <div class="padder-center" >
+                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_third')"><span>ㅈㅊ<br>ㅋㅌ</span></button>
+                </div>                
+            </ion-col>
+            <ion-col col-4>                
+                    <div class="padder-center" > 
+                          
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_forth')"><span>ㅍㅎ<br>ㅆ</span></button>
+                </div>                
+            </ion-col>
+        </ion-row>
+        <!--//자음그룹 4 줄-->    
+        <!--자음그룹 5 줄-->    
+        <ion-row>
+            <ion-col col-4>
+                <div class="padder-center" >                    
+                </div>                
+            </ion-col>
+            <ion-col col-4>                
+                    <div class="padder-center">   
+                        <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_fifth')"><span>ㄲㄸ<br>ㅃㅉ</span></button>
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                    
+                </div>                
+            </ion-col>
+        </ion-row>
+        <!--//자음그룹 5 줄-->    
+      </div><!--//자음 그룹판-->
+
+
+      <!--자음 first-->
+      <div class="divBox" id="div_group_jaum_first">
+          <!--자음 first 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br></span><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">                      
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//자음 first 1 줄-->    
+          <!--자음 first 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄱ','jaum')"><span>ㄱ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄴ','jaum')"><span>ㄴ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 first 2 줄-->  
+          <!--자음 first 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+              </ion-col>
+              <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+              </ion-col>
+              <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+              </ion-col>
+          </ion-row>
+          <!--//자음 first 3 줄-->  
+          <!--자음 first 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄷ','jaum')"><span>ㄷ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄹ','jaum')"><span>ㄹ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 first 4 줄-->
+          <!--자음 first 5 줄-->
+          <ion-row>
+                <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+                </ion-col>
+                <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+                </ion-col>
+                <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+                </ion-col>
+          </ion-row>
+          <!--//자음 first 5 줄-->
+      </div><!--//자음 first-->
+
+      <!--자음 second-->
+      <div class="divBox" id="div_group_jaum_second">
+          <!--자음 second 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br></span><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">                      
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//자음 second 1 줄-->    
+          <!--자음 second 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅁ','jaum')"><span>ㅁ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅂ','jaum')"><span>ㅂ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 second 2 줄-->  
+          <!--자음 second 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+              </ion-col>
+              <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+              </ion-col>
+              <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+              </ion-col>
+          </ion-row>
+          <!--//자음 second 3 줄-->  
+          <!--자음 second 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅅ','jaum')"><span>ㅅ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅇ','jaum')"><span>ㅇ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 second 4 줄-->
+          <!--자음 second 5 줄-->
+          <ion-row>
+                <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+                </ion-col>
+                <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+                </ion-col>
+                <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+                </ion-col>
+          </ion-row>
+          <!--//자음 second 5 줄-->
+      </div><!--//자음 second-->
+
+      <!--자음 third-->
+      <div class="divBox" id="div_group_jaum_third">
+          <!--자음 third 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br></span><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">                      
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//자음 third 1 줄-->    
+          <!--자음 third 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅈ','jaum')"><span>ㅈ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅊ','jaum')"><span>ㅊ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 third 2 줄-->  
+          <!--자음 third 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+              </ion-col>
+              <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+              </ion-col>
+              <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+              </ion-col>
+          </ion-row>
+          <!--//자음 third 3 줄-->  
+          <!--자음 third 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅋ','jaum')"><span>ㅋ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅌ','jaum')"><span>ㅌ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 third 4 줄-->
+          <!--자음 third 5 줄-->
+          <ion-row>
+                <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+                </ion-col>
+                <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+                </ion-col>
+                <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+                </ion-col>
+          </ion-row>
+          <!--//자음 third 5 줄-->
+      </div><!--//자음 third-->
+
+      <!--자음 forth-->
+      <div class="divBox" id="div_group_jaum_forth">
+          <!--자음 forth 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br></span><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">                      
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//자음 forth 1 줄-->    
+          <!--자음 forth 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅍ','jaum')"><span>ㅍ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅎ','jaum')"><span>ㅎ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 forth 2 줄-->  
+          <!--자음 forth 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+              </ion-col>
+              <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+              </ion-col>
+              <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+              </ion-col>
+          </ion-row>
+          <!--//자음 forth 3 줄-->  
+          <!--자음 forth 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅆ','jaum')"><span>ㅆ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 forth 4 줄-->
+          <!--자음 forth 5 줄-->
+          <ion-row>
+                <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+                </ion-col>
+                <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+                </ion-col>
+                <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+                </ion-col>
+          </ion-row>
+          <!--//자음 forth 5 줄-->
+      </div><!--//자음 forth-->
+
+      <!--자음 fifth-->
+      <div class="divBox" id="div_group_jaum_fifth">
+          <!--자음 fifth 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br></span><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">                      
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//자음 fifth 1 줄-->    
+          <!--자음 fifth 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄲ','jaum')"><span>ㄲ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㄸ','jaum')"><span>ㄸ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 fifth 2 줄-->  
+          <!--자음 fifth 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+              </ion-col>
+              <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+              </ion-col>
+              <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+              </ion-col>
+          </ion-row>
+          <!--//자음 fifth 3 줄-->  
+          <!--자음 fifth 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char" >
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅃ','jaum')"><span>ㅃ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅉ','jaum')"><span>ㅉ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//자음 fifth 4 줄-->
+          <!--자음 fifth 5 줄-->
+          <ion-row>
+                <ion-col col-4>          
+                    <div class="padder-center last_char" >                        
+                    </div>
+                </ion-col>
+                <ion-col col-4>                
+                    <div class="padder-center last_char" style="height: 20vw;">
+                    </div>                
+                </ion-col>
+                <ion-col col-4>   
+                    <div class="padder-center last_char" >
+                    </div>
+                </ion-col>
+          </ion-row>
+          <!--//자음 fifth 5 줄-->
+      </div><!--//자음 fifth-->
+
+      <!--모음 그룹판-->
+      <div class="divBox" id="div_group_moum_top">
+          <!--모음그룹 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                      <div class="padder-center" >
+                        <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br>으로</span></button>
+                      </div>                
+            </ion-col>
+            <ion-col col-4>                
+                    <div class="padder-center">                      
+                    </div>                
+            </ion-col>
+          </ion-row>
+          <!--//모음그룹 1 줄-->    
+          <!--모음그룹 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center" >
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_moum_first')"><span>ㅏ ㅑ<br>ㅓ ㅕ</span></button>
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >                      
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center">
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_moum_second')"><span>ㅗ ㅛ<br>ㅜ ㅠ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음그룹 2 줄-->    
+          <!--모음그룹 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center" >                      
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음그룹 3 줄-->    
+          <!--모음그룹 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center" >
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_moum_third')"><span>ㅡ ㅣ<br>ㅐ ㅒ</span></button>
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >                      
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center">
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_moum_forth')"><span>ㅔ ㅖ<br>ㅘ ㅢ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음그룹 4 줄-->    
+          <!--모음그룹 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center" >                      
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >
+                      <button ion-button class="circle" outline (click)="btn_group('div_group_moum_fifth')"><span>ㅙ ㅚ<br>ㅟ ㅝ</span></button>
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음그룹 5 줄-->
+      </div><!--//모음 그룹판-->
+
+      <!--모음 first ㅏ,ㅑ,ㅓ,ㅕ-->
+      <div class="divBox" id="div_group_moum_first">
+          <!--모음 first 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//모음 first 1 줄-->    
+          <!--모음 first 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅏ','moum')"><span>ㅏ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅑ','moum')"><span>ㅑ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 first 2 줄-->    
+          <!--모음 first 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 first 3 줄-->    
+          <!--모음 first 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅓ','moum')"><span>ㅓ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅕ','moum')"><span>ㅕ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 first 4 줄-->    
+          <!--모음 first 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 first 5 줄-->    
+
+      </div><!--//모음 first-->
+
+      <!--모음 second ㅗ,ㅛ,ㅜ,ㅠ-->
+      <div class="divBox" id="div_group_moum_second">
+          <!--모음 second 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//모음 second 1 줄-->    
+          <!--모음 second 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅗ','moum')"><span>ㅗ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅛ','moum')"><span>ㅛ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 second 2 줄-->    
+          <!--모음 second 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 second 3 줄-->    
+          <!--모음 second 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅜ','moum')"><span>ㅜ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅠ','moum')"><span>ㅠ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 second 4 줄-->    
+          <!--모음 second 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 second 5 줄-->    
+
+      </div><!--//모음 second-->
+
+      <!--모음 third ㅡ,ㅣ,ㅐ,ㅒ -->
+      <div class="divBox" id="div_group_moum_third">
+          <!--모음 third 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//모음 third 1 줄-->    
+          <!--모음 third 2 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅡ','moum')"><span>ㅡ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅣ','moum')"><span>ㅣ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 third 2 줄-->    
+          <!--모음 third 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 third 3 줄-->    
+          <!--모음 third 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅐ','moum')"><span>ㅐ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅒ','moum')"><span>ㅒ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 third 4 줄-->    
+          <!--모음 third 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 third 5 줄-->    
+
+      </div><!--//모음 third-->
+
+      <!--모음 forth ㅔ, ㅖ, ㅘ, ㅢ-->
+      <div class="divBox" id="div_group_moum_forth">
+          <!--모음 forth 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//모음 forth 1 줄-->    
+          <!--모음 forth 2 줄-->
+          <ion-row>
+              <ion-col col-4>
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅔ','moum')"><span>ㅔ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅖ','moum')"><span>ㅖ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 forth 2 줄-->    
+          <!--모음 forth 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 forth 3 줄-->    
+          <!--모음 forth 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅘ','moum')"><span>ㅘ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅢ','moum')"><span>ㅢ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 forth 4 줄-->    
+          <!--모음 forth 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 forth 5 줄-->    
+
+      </div><!--//모음 forth-->
+
+      <!--모음 fifth ㅙ, ㅚ, ㅟ, ㅝ-->
+      <div class="divBox" id="div_group_moum_fifth">
+          <!--모음 fifth 1 줄-->    
+          <ion-row>
+            <ion-col col-4>          
+                    <div class="padder-center">                    
+                    </div>                
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center" >
+                  <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음</span><br><span>으로</span></button>
+                </div>
+            </ion-col>
+            <ion-col col-4>                
+                <div class="padder-center">
+                </div>
+            </ion-col>
+          </ion-row>
+          <!--//모음 fifth 1 줄-->    
+          <!--모음 fifth 2 줄-->
+          <ion-row>
+              <ion-col col-4>
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅙ','moum')"><span>ㅙ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                        <div class="padder-center" >
+                        </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅚ','moum')"><span>ㅚ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 fifth 2 줄-->    
+          <!--모음 fifth 3 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                  
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 fifth 3 줄-->    
+          <!--모음 fifth 4 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅟ','moum')"><span>ㅟ</span></button>
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" >
+                  </div>                
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">
+                      <button ion-button class="circle" outline (click)="btn_last_char('ㅝ','moum')"><span>ㅝ</span></button>
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 fifth 4 줄-->    
+          <!--모음 fifth 5 줄-->
+          <ion-row>
+              <ion-col col-4>          
+                  <div class="padder-center last_char">                      
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center" style="height: 20vw;">
+                  </div>
+              </ion-col>
+              <ion-col col-4>                
+                  <div class="padder-center last_char">                      
+                  </div>                
+              </ion-col>
+          </ion-row>
+          <!--//모음 fifth 5 줄-->    
+
+      </div><!--//모음 fifth-->
+
+      <div class="txtBox">
+          <ion-row>
+              <ion-input type="text"  [(ngModel)]="txt_output" [readonly]="true"></ion-input>
+          </ion-row>        
+      </div>
+      
+      
+
+
+      
+      
+
+    </div><!--//전체 div-->
+    
+
+  </ion-grid>
+
+
+
+
+</ion-content>
+
+<script src="../../assets/js/hangul.js"></script>
