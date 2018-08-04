@@ -12,13 +12,9 @@ import * as Hangul from 'hangul-js';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  g_input:string[];//입력된 캐릭터....계속 쌓이거나...
+  
   g_arr:string[]=[];
-
-  txt_output:string;
-  
-
-  
+  txt_output:string;  
 
   style_divBox_j = {
     'z-index': 1
@@ -44,7 +40,7 @@ export class HomePage {
     let i = 0;    
     
     //모든 판의 zIndex를 기본으로 변경 후
-    sel = document.getElementsByClassName("divBox") as HTMLCollectionOf<HTMLElement>;
+    sel = document.getElementsByClassName("gridBox") as HTMLCollectionOf<HTMLElement>;
     for (i=0; i< sel.length;i++) {
       sel[i].style.zIndex = "0";
     }
@@ -61,7 +57,7 @@ export class HomePage {
     let i = 0;     
 
     //모든 판의 zIndex를 기본으로 변경 후
-    sel = document.getElementsByClassName("divBox") as HTMLCollectionOf<HTMLElement>;
+    sel = document.getElementsByClassName("gridBox") as HTMLCollectionOf<HTMLElement>;
     for (i=0; i< sel.length;i++) {
       sel[i].style.zIndex = "0";
     }
@@ -77,26 +73,21 @@ export class HomePage {
     }
 
     this.g_arr.push(char);
+    if(this.g_arr.length > 30){
+      this.g_arr.shift();
+      }
+
     this.txt_output = Hangul.assemble(this.g_arr).toString();
-
-
-
-    //this.g_input = this.g_input + char;
-
-    //this.txt_output = Hangul.assemble(this.g_input);
-
-    //let aaa = Hangul.assemble(this.g_input);
+    console.log("g_arr length_push : " + this.g_arr.length);
     
-    //console.log(Hangul);
-
-
-
-    //this.txt_output = Hangul.assemble
-    //alert(Hangul);
     
-
     }
   
+  btn_char_del(){
+    this.g_arr.pop();    
+    this.txt_output = Hangul.assemble(this.g_arr).toString();
+    console.log("g_arr length_pop : " + this.g_arr.length);    
+  }  
   
   vibrate(){
     this.vibration.vibrate(300);
@@ -109,26 +100,8 @@ export class HomePage {
       console.log(error);
     });
   }
-
   
-  /*
-  go_jaum(val:number){//처음으로
-    if(val=== 0 ){
-      document.getElementById('div_group_jaum-j').style.zIndex = "0";
-      
-      let sel = document.getElementsByClassName("divBox-j") as HTMLCollectionOf<HTMLElement>;
-      for (var i=0; i< sel.length;i++) {
-        sel[i].style.zIndex = "1";
-      }
-    }
-    else{
-      console.log("XXXXxX");
-    }
   
-
-  }
-*/
-
   
 
   
