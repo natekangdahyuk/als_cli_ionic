@@ -16,10 +16,7 @@ export class HomePage {
   g_arr:string[]=[];
   txt_output:string;  
 
-  style_divBox_j = {
-    'z-index': 1
-  };
-
+  
 
   constructor(public navCtrl: NavController,public platform: Platform, 
       private vibration :Vibration, private nativeAudio: NativeAudio) {
@@ -34,8 +31,8 @@ export class HomePage {
 
   //그룹판 클릭
   btn_group(group_position:string){
-    this.vibrate();
-    this.play();
+    this.btn_vibrate();
+    this.btn_play();
     let sel;
     let i = 0;    
     
@@ -51,10 +48,11 @@ export class HomePage {
 
   //마지막 캐릭터 클릭
   btn_last_char(char:string,um:string){
-    this.vibrate();
-    this.play();
+    this.btn_play();
+    this.btn_vibrate();    
     let sel;
     let i = 0;     
+
 
     //모든 판의 zIndex를 기본으로 변경 후
     sel = document.getElementsByClassName("gridBox") as HTMLCollectionOf<HTMLElement>;
@@ -73,14 +71,23 @@ export class HomePage {
     }
 
     this.g_arr.push(char);
+
+    //15자 초과일 경우 스크롤을 아래로 내리기
+    if(this.g_arr.length > 15){
+      var objDiv = document.getElementById("txtBox");
+      objDiv.style.height= "14vh";    
+    }
+
+    //30자 이상일 경우 맨 앞에 자 삭제하기
     if(this.g_arr.length > 30){
       this.g_arr.shift();
       }
 
     this.txt_output = Hangul.assemble(this.g_arr).toString();
+    
+
+
     console.log("g_arr length_push : " + this.g_arr.length);
-    
-    
     }
   
   btn_char_del(){
@@ -88,12 +95,17 @@ export class HomePage {
     this.txt_output = Hangul.assemble(this.g_arr).toString();
     console.log("g_arr length_pop : " + this.g_arr.length);    
   }  
+
+  btn_char_all_del(){
+    this.g_arr =[];
+    this.txt_output = Hangul.assemble(this.g_arr).toString();    
+  }
   
-  vibrate(){
+  btn_vibrate(){
     this.vibration.vibrate(300);
   }
 
-  play(){    
+  btn_play(){    
     this.nativeAudio.play('uniqueId1').then((success)=>{
       console.log("success playing");
     },(error)=>{

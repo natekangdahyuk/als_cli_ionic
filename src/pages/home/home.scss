@@ -1,14 +1,16 @@
 page-home {
     .ion_header{
-        height: 5vh;
+        height: 7vh;        
     }
+
     
     .gridBox{
         position: absolute;
-        top:0;
+        top:2%;
         left:0;
         width: 100%;
-        height: 75vh;
+        //height: 75vh;
+        height: 100%;
         background-color: bisque;
         //background-color: red;
     }
@@ -27,12 +29,14 @@ page-home {
 
     .txtBox{        
         position: relative;        
-        z-index: 3000;
-        //left:0px;        
+        z-index: 3000;           
         width: 100%;
-        height: 14vh;
+        height: 9vh;
+        background-color: yellow;
+        
+        overflow-y:scroll;
 
-        //background-color: yellow;
+        
         font-size: 2em;
         text-align: center;
 

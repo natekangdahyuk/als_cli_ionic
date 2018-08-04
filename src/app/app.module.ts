@@ -14,6 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Vibration } from '@ionic-native/vibration';
 import { NativeAudio } from '@ionic-native/native-audio';
 
+import { Autosize} from '../components/autosize';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { NativeAudio } from '@ionic-native/native-audio';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    Autosize
   ],
   imports: [
     BrowserModule,

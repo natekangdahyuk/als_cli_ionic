@@ -1,13 +1,15 @@
 <ion-header>
         <ion-navbar class="ion_header">
-          <ion-title>바로트럭</ion-title>
-          <ion-buttons end> <button ion-button (click)="btn_char_del()">삭제</button></ion-buttons>
+          <ion-title>영우글자판</ion-title>
+          <ion-buttons end> <button ion-button (click)="btn_char_del()">한개삭제</button></ion-buttons>
+          <ion-buttons end> <button ion-button (click)="btn_char_all_del()">전체삭제</button></ion-buttons>
         </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    
     <!--자음 그룹판-->
-    <ion-grid class="gridBox" id="div_group_jaum_top" style="z-index:1;">
+    <ion-grid class="gridBox" id="div_group_jaum_top" style="z-index:1;">        
         <!--자음그룹 1 줄-->
         <ion-row class="rowBox">
             <ion-col col-4>
@@ -16,7 +18,7 @@
             </ion-col>
             <ion-col col-4>
                 <div class="padder-center" >
-                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_first')"><span>처음<br>으로</span></button>
+                    <button ion-button class="circle" outline (click)="btn_group('div_group_jaum_top')"><span>처음<br>으로</span></button>
                 </div>
             </ion-col>
             <ion-col col-4>
@@ -1084,9 +1086,8 @@
 </ion-content>
 
 <ion-footer>
-    <div class="txtBox">        
-            <!--<ion-input type="text"  [(ngModel)]="txt_output" [readonly]="true"></ion-input>-->
-        <ion-textarea [(ngModel)]="txt_output" [readonly]="true"></ion-textarea>
+    <div class="txtBox" id="txtBox">        
+        <ion-textarea placeholder="입력판" [(ngModel)]="txt_output" [readonly]="true"></ion-textarea>        
     </div>
 </ion-footer>
 
