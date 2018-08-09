@@ -13,10 +13,6 @@ log.txt
 npm-debug.log*
 
 als_final.apk
-als.apk
-zipalign
-CertificateSigningRequest.certSigningRequest
-ios_development.cer
 
 .idea/
 .ionic/
