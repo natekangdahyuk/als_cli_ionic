@@ -14,7 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Vibration } from '@ionic-native/vibration';
 import { NativeAudio } from '@ionic-native/native-audio';
 
-import { Autosize} from '../components/autosize';
+import { FCM } from '@ionic-native/fcm';
+
 
 
 
@@ -24,8 +25,7 @@ import { Autosize} from '../components/autosize';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    Autosize
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,8 @@ import { Autosize} from '../components/autosize';
     StatusBar,
     SplashScreen,
     NativeAudio,
-    Vibration,        
+    Vibration,
+    FCM, 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
