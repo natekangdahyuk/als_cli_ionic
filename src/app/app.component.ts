@@ -15,19 +15,23 @@ import { FCM } from '@ionic-native/fcm';
 export class MyApp {
   rootPage:any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private fcm: FCM) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, fcm: FCM) {
     platform.ready().then(() => {
       //Notifications
+      
       fcm.subscribeToTopic('all');
-      fcm.getToken().then(token=>{
+      fcm.getToken().then(token => {
         console.log(token);
       })
-      fcm.onNotification().subscribe(data=>{
+      fcm.onNotification().subscribe(data => {
         if(data.wasTapped){
           console.log("Received in background");
         } else {
           console.log("Received in foreground");
         };
+      })
+      fcm.onTokenRefresh().subscribe(token => {
+        console.log(token);
       })
       //end notifications
       statusBar.styleDefault();
