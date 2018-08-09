@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "49895986986",
+    "firebase_url": "https://alskeyboard-3f854.firebaseio.com",
+    "project_id": "alskeyboard-3f854",
+    "storage_bucket": "alskeyboard-3f854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49895986986:android:ad928c3cd21fc5d6",
+        "android_client_info": {
+          "package_name": "com.macamoa.alskeyboard.test2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49895986986-6pi814g7pnsjsrbeisd2nouhigkkdp2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.macamoa.alskeyboard.test2",
+            "certificate_hash": "2950834902f574ab64733b4f5dd0b4d8f8e13433"
+          }
+        },
+        {
+          "client_id": "49895986986-njug6giol0hj7jqjm4etnq8fa2l5uf34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd_k5MtTbvfGt3Ei9Q3hFabIqJKJSnylI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49895986986-njug6giol0hj7jqjm4etnq8fa2l5uf34.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "49895986986-5kdk4hg8qmuotvkbbtr8j9c2lmecqbmh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.macamoa.alskeyboard.test2"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

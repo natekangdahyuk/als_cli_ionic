@@ -11,8 +11,8 @@ page-home {
         width: 100%;
         //height: 75vh;
         height: 100%;
-        background-color: bisque;
-        //background-color: red;
+        //background-color: bisque;
+        background-color: #b2c7d9
     }
 
     .rowBox{
@@ -32,7 +32,7 @@ page-home {
         z-index: 3000;           
         width: 100%;
         height: 9vh;
-        background-color: yellow;
+        background-color:#ffeb33;
         
         overflow-y:scroll;
 
@@ -63,8 +63,11 @@ page-home {
             display: block;
             width: 30vw;
             //height: 10vw;
+            font-weight: bold;
+            color: black;
             height: 100%;
             border-radius: 50%;
+            background-color: white;
         }
 
         .button-outline-ios {

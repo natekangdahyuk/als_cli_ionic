@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>49895986986-5kdk4hg8qmuotvkbbtr8j9c2lmecqbmh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.49895986986-5kdk4hg8qmuotvkbbtr8j9c2lmecqbmh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBz1wA8hZnah5THTCb6QKYT9vX3HqxsqVU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>49895986986</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.macamoa.alskeyboard.test2</string>
+	<key>PROJECT_ID</key>
+	<string>alskeyboard-3f854</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alskeyboard-3f854.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:49895986986:ios:ad928c3cd21fc5d6</string>
+	<key>DATABASE_URL</key>
+	<string>https://alskeyboard-3f854.firebaseio.com</string>
+</dict>
+</plist>
