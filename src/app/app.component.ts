@@ -22,7 +22,7 @@ export class MyApp {
       //Notifications
       ///*
       fcm.subscribeToTopic('all');
-      fcm.getToken().then(token => {
+      fcm.getToken().then(token => {        
         console.log(token);
       })
       
