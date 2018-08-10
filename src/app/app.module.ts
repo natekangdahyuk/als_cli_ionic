@@ -15,6 +15,7 @@ import { Vibration } from '@ionic-native/vibration';
 import { NativeAudio } from '@ionic-native/native-audio';
 
 import { FCM } from '@ionic-native/fcm';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -29,6 +30,7 @@ import { FCM } from '@ionic-native/fcm';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

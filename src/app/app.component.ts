@@ -17,12 +17,15 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, fcm: FCM) {
     platform.ready().then(() => {
+      //웹 UI 확인 하려면 FCM 부분을 주석 처리해야 한다.
+      //또는 브레이크 걸고 ionic cordova run android --device  로 확인
       //Notifications
-      
+      ///*
       fcm.subscribeToTopic('all');
       fcm.getToken().then(token => {
         console.log(token);
       })
+      
       fcm.onNotification().subscribe(data => {
         if(data.wasTapped){
           console.log("Received in background");
@@ -30,12 +33,13 @@ export class MyApp {
           console.log("Received in foreground");
         };
       })
+      
       fcm.onTokenRefresh().subscribe(token => {
         console.log(token);
       })
       //end notifications
-      statusBar.styleDefault();
-      splashScreen.hide();
+     // */
+
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
